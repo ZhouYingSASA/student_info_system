@@ -63,7 +63,7 @@ conn = pymysql.connect(
 
 
 ### 2、Docker部署  
-也可以只配置数据库信息（只做上面2、3步），然后通过Docker方式进行部署。dockerfile仅做参考，可以自行修改。  
+也可以只配置数据库信息（只做上面2、3步），然后通过Docker方式进行部署。
 1、建立image    
 ```
 docker image build -t student_info_system .
@@ -80,12 +80,3 @@ docker container run -d -p 8000:8000 --name student_info_system student_info_sys
 ## 相关URL
 /student/front 前台，将此地址展示给学生即可开始业务流程    
 /admin/login 后台登录入口  
-
-
-
-
-## 部分截图
-![](http://pic.printyun.cn/登录.png)
-![http://pic.printyun.cn/stu-1.png](http://pic.printyun.cn/stu-1.png)
-![http://pic.printyun.cn/stu-3.png](http://pic.printyun.cn/stu-3.png)
-![http://pic.printyun.cn/stu-4.png](http://pic.printyun.cn/stu-4.png)
