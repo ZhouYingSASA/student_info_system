@@ -17,7 +17,7 @@ class Config(object):
 
 # 继承Config，来设定下面的内容：MySQL
 class DevelopmentConfig(Config):
-    SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:Qwer123456@127.0.0.1:3306/xueji'
+    SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://zhy:zhY123456@127.0.0.1:3306/xueji'
 
     @classmethod
     def init_app(cls, app):

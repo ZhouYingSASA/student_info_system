@@ -27,9 +27,9 @@ def excel(excel):
         '艺术学院': 21
     }
     conn = pymysql.connect(
-        host='127.0.0.1',
-        user='root',
-        passwd='Qwer123456',
+        host='118.89.24.58',
+        user='zhy',
+        passwd='zhY123456',
         db='xueji',
         port=3306,
         charset='utf8'
