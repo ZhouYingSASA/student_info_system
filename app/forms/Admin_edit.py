@@ -15,7 +15,7 @@ class Core(FlaskForm):
 
 class ZZY_EDIT(Core):
     dom_dorm = StringField('原宿舍号')
-    school = SelectField('校区', default='', choices=[('','请输入你所在的校区'),('龙子湖校区','龙子湖校区'),('北林校区','北林校区'),('英才校区','英才校区')])
+    school = SelectField('校区', default='', choices=[('','请输入你所在的校区'),('前湖校区','前湖校区'),('青山湖校区','青山湖校区')])
     campus = StringField('院系')
     discipline = StringField('专业')
     classgrade = StringField('班级')
@@ -26,7 +26,7 @@ class ZZY_EDIT(Core):
 
 
 class FX_EDIT(Core): # OK
-    school = SelectField('校区', default='', choices=[('','请输入你所在的校区'), ('龙子湖校区','龙子湖校区'), ('北林校区','北林校区'), ('英才校区','英才校区')])
+    school = SelectField('校区', default='', choices=[('','请输入你所在的校区'), ('前湖校区','前湖校区'), ('青山湖校区','青山湖校区')])
     campus = StringField('院系')
     discipline = StringField('专业')
     classgrade = StringField('班级')
@@ -50,7 +50,7 @@ class TXL_EDIT(Core):
 class XLZM_EDIT(Core):  # OK
     school_sttime = DateField('入校时间')
     school_endtime = DateField('离校时间')
-    school = SelectField('所在校区',choices=[('','请输入你所在的校区'),('龙子湖校区','龙子湖校区'),('北林校区','北林校区'),('英才校区','英才校区')])
+    school = SelectField('所在校区',choices=[('','请输入你所在的校区'),('前湖校区','前湖校区'),('青山湖校区','青山湖校区')])
     campus = StringField('所在院系')
     discipline = StringField('专业')
     code = StringField('证书编号')

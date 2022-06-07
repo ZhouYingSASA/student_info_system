@@ -67,7 +67,7 @@ class EditForm(FlaskForm):
     dom_dorm = StringField('原宿舍号')
 
     # 学历证明
-    school = SelectField('所在校区',choices=[('','请输入你所在的校区'),('龙子湖校区','龙子湖校区'),('北林校区','北林校区'),('英才校区','英才校区')])
+    school = SelectField('所在校区',choices=[('','请输入你所在的校区'),('前湖校区','前湖校区'),('青山湖校区','青山湖校区')])
     campus = StringField('所在院系')
     code = StringField('证书编号')
     identity = StringField('身份证号码')
