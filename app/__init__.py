@@ -34,9 +34,6 @@ def register_blueprint(app):
     from app.web import print_all as print_all_blueprint
     app.register_blueprint(print_all_blueprint, url_prefix='/print_all')
 
-    from app.web import weixin as weixin_back_blueprint
-    app.register_blueprint(weixin_back_blueprint, url_prefix='/weixin_back')
-
     # 为 某一个蓝图 取消csrf保护
     csrf.exempt(weixin_back_blueprint)
 
