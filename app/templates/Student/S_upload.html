@@ -115,32 +115,31 @@
                                             </div>
                                         </div>
 
-                                        <div class="layui-form" style="margin-top: 12px;display: none">
+                                        <div class="layui-form" style="margin-top: 12px;">
                                             <div class="layui-form-item">
                                                 <div class="layui-inline">
-                                                    <label class="layui-form-label">所在院系</label>
+                                                    <label class="layui-form-label">转入院系</label>
                                                     <div class="layui-input-inline">
-                                                        {{ ZZY_FORM.campus(class="layui-input",value="none") }}
+                                                        {{ ZZY_FORM.campus(class="layui-input",placeholder="请输入您转入的院系") }}
                                                 {% for message in ZZY_FORM.campus.errors %}
                                                     <script>alert("{{ message }}")</script>
                                                 {% endfor %}
-                                                        {#							 <input type="text" class="layui-input" placeholder="请输入您所在的院系">#}
+                                                        {#							 <input type="text" class="layui-input" placeholder="请输入您转入的院系">#}
                                                     </div>
                                                 </div>
                                             </div>
-                                            例如：软件学院
                                         </div>
 
-                                        <div class="layui-form" style="display: none">
+                                        <div class="layui-form">
                                             <div class="layui-form-item">
                                                 <div class="layui-inline">
-                                                    <label class="layui-form-label">所在专业</label>
+                                                    <label class="layui-form-label">转入专业</label>
                                                     <div class="layui-input-inline">
-                                                        {{ ZZY_FORM.discipline(class="layui-input",value="none") }}
+                                                        {{ ZZY_FORM.discipline(class="layui-input",placeholder="请输入您所转入的专业") }}
                                                 {% for message in ZZY_FORM.discipline.errors %}
                                                     <script>alert("{{ message }}")</script>
                                                 {% endfor %}
-                                                        {#								 <input type="text" class="layui-input" placeholder="请输入您所在的专业">#}
+                                                        {#								 <input type="text" class="layui-input" placeholder="请输入您所转入的专业">#}
                                                     </div>
                                                 </div>
                                             </div>

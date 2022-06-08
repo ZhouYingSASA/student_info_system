@@ -35,9 +35,6 @@ def register_blueprint(app):
     app.register_blueprint(print_all_blueprint, url_prefix='/print_all')
 
     # 为 某一个蓝图 取消csrf保护
-    csrf.exempt(weixin_back_blueprint)
-
-    # 为 某一个蓝图 取消csrf保护
     csrf.exempt(student_blueprint)
     csrf.exempt(edit_blueprint)
 
